@@ -1,0 +1,1282 @@
+/* =========================================
+   WARNA WEBSITE
+========================================= */
+
+:root {
+
+    --cream: #E5E3EC;
+
+    --pink-muda: #FFC2D1;
+
+    --pink: #EFB3C6;
+
+    --pink-terang: #FF8FAB;
+
+    --pink-soft: #FBE6F2;
+
+    --ungu: #CDB4DB;
+
+    --putih: #FFFFFF;
+
+    --teks: #51454D;
+
+    --abu-teks: #7B6F76;
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--cream);
+
+    color: var(--teks);
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+.navbar {
+
+    min-height: 70px;
+
+    padding: 15px 7%;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: var(--pink-terang);
+
+}
+
+
+.logo span {
+
+    color: var(--ungu);
+
+}
+
+
+/* MENU */
+
+.menu {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+
+.menu a {
+
+    color: var(--teks);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    color: var(--pink-terang);
+
+}
+
+
+/* =========================================
+   HOME
+========================================= */
+
+.home {
+
+    min-height: 90vh;
+
+    padding: 80px 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            var(--pink-muda),
+            transparent 18%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--cream),
+            var(--pink-soft)
+        );
+
+}
+
+
+.home-text {
+
+    max-width: 650px;
+
+}
+
+
+.small-title {
+
+    color: var(--pink-terang);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.home h1 {
+
+    font-size: 65px;
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+
+}
+
+
+.home h1 span {
+
+    display: block;
+
+    color: var(--pink-terang); /* warna pink */
+
+}
+
+
+.description {
+
+    max-width: 560px;
+
+    color: var(--abu-teks);
+
+    margin: 20px 0 30px;
+
+}
+
+
+/* BUTTON */
+
+.button {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background-color: var(--pink-terang);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(255, 143, 171, 0.3);
+
+    transition: 0.3s;
+
+}
+
+
+.button:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+/* =========================================
+   HOME RIGHT
+========================================= */
+
+.home-right {
+
+    position: relative;
+
+}
+
+
+.profile-card {
+
+    width: 290px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.profile-circle {
+
+    width: 180px;
+
+    height: 180px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--pink-muda),
+        var(--pink-terang)
+    );
+
+    color: white;
+
+    font-size: 70px;
+
+    font-weight: bold;
+
+}
+
+
+.profile-card h3 {
+
+    margin-top: 18px;
+
+}
+
+
+.profile-card p {
+
+    color: var(--abu-teks);
+
+    font-size: 14px;
+
+}
+
+
+.flower {
+
+    position: absolute;
+
+    right: -30px;
+
+    top: -30px;
+
+    font-size: 55px;
+
+    color: var(--pink-terang);
+
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.section {
+
+    padding: 90px 9%;
+
+}
+
+
+.pink-section {
+
+    background-color: var(--pink-soft);
+
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+
+    margin-bottom: 45px;
+
+}
+
+
+.section-heading span {
+
+    color: var(--pink-terang);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 42px;
+
+    margin: 5px 0;
+
+}
+
+
+.section-heading p {
+
+    color: var(--abu-teks);
+
+}
+
+
+/* =========================================
+   BIODATA
+========================================= */
+
+.biodata-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.biodata-card {
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    border-left: 5px solid var(--pink-terang);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.biodata-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: var(--pink-muda);
+
+    color: var(--pink-terang);
+
+    font-weight: bold;
+
+}
+
+
+.biodata-card span {
+
+    color: var(--abu-teks);
+
+    font-size: 13px;
+
+}
+
+
+.biodata-card h3 {
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================
+   GALERI
+========================================= */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.gallery-item {
+
+    text-align: center;
+
+}
+
+
+.gallery-placeholder {
+
+    height: 220px;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        var(--pink-muda),
+        var(--ungu)
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 45px;
+
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.gallery-item p {
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   TENTANG
+========================================= */
+
+.about-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.5fr;
+
+    gap: 20px;
+
+    align-items: stretch;
+
+}
+
+
+.about-box {
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.about-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.about-box h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.about-text {
+
+    padding: 20px;
+
+}
+
+
+.about-text p {
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   TIMELINE PENDIDIKAN
+========================================= */
+
+.timeline {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    border-left: 3px solid var(--pink-muda);
+
+    padding-left: 40px;
+
+}
+
+
+.timeline-item {
+
+    position: relative;
+
+    padding-bottom: 35px;
+
+}
+
+
+.timeline-number {
+
+    position: absolute;
+
+    left: -63px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: var(--pink-terang);
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+.timeline-content {
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.timeline-content small {
+
+    color: var(--pink-terang);
+
+    font-weight: bold;
+
+}
+
+
+.timeline-content h3 {
+
+    margin: 5px 0;
+
+}
+
+
+/* =========================================
+   ORGANISASI
+========================================= */
+
+.organization-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.organization-card {
+
+    position: relative;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+}
+
+
+.organization-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.organization-number {
+
+    color: var(--pink-terang);
+
+    font-weight: bold;
+
+}
+
+
+.organization-icon {
+
+    font-size: 35px;
+
+    margin: 20px 0 5px;
+
+}
+
+
+.organization-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================
+   KELEBIHAN
+========================================= */
+
+.strength-container {
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.strength-main {
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background-color: var(--pink-terang);
+
+    color: white;
+
+}
+
+
+.big-star {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.strength-main h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.strength-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.strength-list div {
+
+    padding: 18px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   PRESTASI
+========================================= */
+
+.achievement-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.achievement-card {
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+
+}
+
+
+.achievement-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.achievement-card.best {
+
+    background-color: var(--pink-terang);
+
+    color: white;
+
+}
+
+
+.medal {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.achievement-card small {
+
+    color: var(--pink-terang);
+
+    font-weight: bold;
+
+}
+
+
+.achievement-card.best small {
+
+    color: white;
+
+}
+
+
+.achievement-card h3 {
+
+    font-size: 30px;
+
+    margin: 5px 0;
+
+}
+
+
+/* =========================================
+   KOMPETENSI
+========================================= */
+
+.coding-card {
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.code-symbol {
+
+    min-width: 80px;
+
+    height: 80px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: var(--pink-terang);
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+.coding-card h3 {
+
+    font-size: 25px;
+
+}
+
+
+.skill-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+.skill-tags span {
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    background-color: white;
+
+    border: 2px solid var(--pink-muda);
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   PORTOFOLIO
+========================================= */
+
+.portfolio-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.portfolio-card {
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+
+}
+
+
+.portfolio-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.portfolio-number {
+
+    color: var(--pink-terang);
+
+    font-weight: bold;
+
+}
+
+
+.portfolio-icon {
+
+    height: 150px;
+
+    margin: 20px 0;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--pink-muda),
+        var(--ungu)
+    );
+
+    color: white;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+}
+
+
+.portfolio-card small {
+
+    color: var(--pink-terang);
+
+    font-weight: bold;
+
+}
+
+
+.portfolio-card h3 {
+
+    margin: 5px 0;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding: 45px 9%;
+
+    text-align: center;
+
+    background-color: #D8D5DF;
+
+}
+
+
+.footer-logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: var(--pink-terang);
+
+}
+
+
+.footer-logo span {
+
+    color: var(--ungu);
+
+}
+
+
+footer p {
+
+    margin: 8px 0;
+
+    color: var(--abu-teks);
+
+}
+
+
+footer small {
+
+    color: var(--abu-teks);
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+   UNTUK TABLET / HP
+========================================= */
+
+@media (max-width: 900px) {
+
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .menu {
+
+        gap: 10px;
+
+    }
+
+
+    .home {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .home h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .achievement-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .portfolio-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .strength-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media (max-width: 600px) {
+
+
+    .section {
+
+        padding: 65px 6%;
+
+    }
+
+
+    .home {
+
+        padding: 60px 6%;
+
+    }
+
+
+    .home h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .biodata-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .organization-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .coding-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+}
